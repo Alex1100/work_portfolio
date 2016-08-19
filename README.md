@@ -1,3 +1,3 @@
 # work_portfolio
 
-<a href="https://alex1100.github.io/work_portfolio/">Check It Out!</a>
+<a href="http://alex1100.software">Check It Out!</a>
