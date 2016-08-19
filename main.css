@@ -109,6 +109,16 @@ position:relative;
   float: right;
 }
 
+.resume_icon{
+  background-color: #A2B5CD;
+  border-radius: 75px;
+  border: solid 1px white;
+  display: inline-block;
+  position: relative;
+  left: 10px;
+  bottom: 4px;
+}
+
 .github_icon{
   display: inline-block;
   position: relative;
