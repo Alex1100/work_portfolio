@@ -41,7 +41,7 @@ nav.navbar.navbar-default{
 {
   width: 232px;
   height: 170px;
-  border-top: 12px solid lightgreen;
+  border-top: 11px solid lightgreen;
   margin-top: 5px;
 }
 
@@ -50,8 +50,8 @@ nav.navbar.navbar-default{
   position: relative;
   overflow: hidden;
   transform: rotate(45deg) skew(10deg,10deg);
-  border-bottom: 12px solid lightgreen;
-  border-right: 12px solid lightgreen;
+  border-bottom: 11px solid lightgreen;
+  border-right: 11px solid lightgreen;
   width: 200px;
   height: 200px;
   margin:-100px 0 0 16px;
