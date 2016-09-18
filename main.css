@@ -50,8 +50,8 @@ nav.navbar.navbar-default{
   position: relative;
   overflow: hidden;
   transform: rotate(45deg) skew(10deg,10deg);
-  border-bottom: 1px solid lightgreen;
-  border-right: 1px solid lightgreen;
+  border-bottom: 10px solid lightgreen;
+  border-right: 10px solid lightgreen;
   width: 200px;
   height: 200px;
   margin:-100px 0 0 16px;
