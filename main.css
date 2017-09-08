@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 */
+
 span{
   display: block;
   visibility: hidden;
@@ -89,8 +90,10 @@ position:relative;
 }
 
 .awesome{
-  background-color: #A2B5CD;
-  color: white;
+  /*background-color: #A2B5CD;*/
+  background-color: white;
+  background-image: url("../under_construction.jpg")
+  background-size: cover;
 }
 
 .logo{
