@@ -3,6 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 */
 
+body{
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 span{
   display: block;
   visibility: hidden;
@@ -140,7 +146,7 @@ ul {
   padding: 5px;
   display: block;
   position: relative;
-  top: 350px;
+  top: 100px;
 }
 
 .info{
