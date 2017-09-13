@@ -97,16 +97,16 @@ position:relative;
 
 .awesome{
   background-color: white;
-  background-image: url("../under_construction.jpg")
+  background-image: url("https://media.giphy.com/media/VR8Sgeow2n0Q0/giphy.gif")
   background-size: cover;
 }
 
 .logo{
-  display: inline-block;
-  position: relative;
-  left: 0px;
-  color: #A2B5CD;
-}
+    display: inline-block;
+    position: relative;
+    left: -45px;
+    color: #A2B5CD;
+  }
 
 .linkedin_icon{
   display: inline-block;
@@ -117,7 +117,7 @@ position:relative;
   float: right;
 }
 
-.resume_icon{
+/*.resume_icon{
   background-color: #A2B5CD;
   border-radius: 75px;
   border: solid 1px white;
@@ -125,6 +125,61 @@ position:relative;
   position: relative;
   left: 10px;
   bottom: 4px;
+}*/
+
+.resume_icon{
+    background-color: #A2B5CD;
+    border-radius: 75px;
+    border: solid 1px white;
+    display: inline-block;
+    position: absolute;
+    left: 145px;
+    bottom: 10px;
+  }
+
+.titleDiv{
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  color: red
+}
+
+.content{
+  background-color: black;
+  border-radius: 4px;
+  margin: 0 5px auto;
+  padding: 5px;
+  display: block;
+  position: relative;
+  top: 0px;
+}
+
+
+
+@media (min-width: 100px) and (max-width: 601px) {
+  .content{
+    background-color: black;
+    border-radius: 4px;
+    margin: 0 5px auto;
+    padding: 5px;
+    display: block;
+    position: relative;
+    top: 300px;
+  }
+
+  .particles-js-canvas-el{
+    height: 200%;
+  }
+
+  .titleDiv{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    color: red;
+    top: 200px;
+  }
 }
 
 .github_icon{
@@ -139,15 +194,7 @@ ul {
   list-style-type: none;
 }
 
-.content{
-  background-color: black;
-  border-radius: 4px;
-  margin: 0 5px auto;
-  padding: 5px;
-  display: block;
-  position: relative;
-  top: 0px;
-}
+
 
 .info{
   color: ghostwhite;
