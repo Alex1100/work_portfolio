@@ -2,10 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 */
+
+body{
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 span{
   display: block;
   visibility: hidden;
-  height: 330px;
+  height: 0px;
 }
 
 
@@ -64,7 +71,7 @@ nav.navbar.navbar-default{
   top: -50%;
   left: -50%;
   z-index: -1;
-  background: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSzr5VSgfR9L5aTA9LpcbzbhDgfN0fCcJrhxdmo5nbyGBONMAJ);
+  background: url(https://avatars2.githubusercontent.com/u/14917749?v=3&s=400);
   background-size: 100%;
   background-position: center top;
   transform: skew(-10deg,-10deg) rotate(-45deg) ;
@@ -89,16 +96,17 @@ position:relative;
 }
 
 .awesome{
-  background-color: #A2B5CD;
-  color: white;
+  background-color: white;
+  background-image: url("https://media.giphy.com/media/VR8Sgeow2n0Q0/giphy.gif")
+  background-size: cover;
 }
 
 .logo{
-  display: inline-block;
-  position: relative;
-  left: 0px;
-  color: #A2B5CD;
-}
+    display: inline-block;
+    position: relative;
+    left: -45px;
+    color: #A2B5CD;
+  }
 
 .linkedin_icon{
   display: inline-block;
@@ -109,7 +117,7 @@ position:relative;
   float: right;
 }
 
-.resume_icon{
+/*.resume_icon{
   background-color: #A2B5CD;
   border-radius: 75px;
   border: solid 1px white;
@@ -117,6 +125,61 @@ position:relative;
   position: relative;
   left: 10px;
   bottom: 4px;
+}*/
+
+.resume_icon{
+    background-color: #A2B5CD;
+    border-radius: 75px;
+    border: solid 1px white;
+    display: inline-block;
+    position: absolute;
+    left: 145px;
+    bottom: 10px;
+  }
+
+.titleDiv{
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  color: red
+}
+
+.content{
+  background-color: black;
+  border-radius: 4px;
+  margin: 0 5px auto;
+  padding: 5px;
+  display: block;
+  position: relative;
+  top: 0px;
+}
+
+
+
+@media (min-width: 100px) and (max-width: 601px) {
+  .content{
+    background-color: black;
+    border-radius: 4px;
+    margin: 0 5px auto;
+    padding: 5px;
+    display: block;
+    position: relative;
+    top: 300px;
+  }
+
+  .particles-js-canvas-el{
+    height: 200%;
+  }
+
+  .titleDiv{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    color: red;
+    top: 200px;
+  }
 }
 
 .github_icon{
@@ -131,15 +194,7 @@ ul {
   list-style-type: none;
 }
 
-.content{
-  background-color: black;
-  border-radius: 4px;
-  margin: 0 5px auto;
-  padding: 5px;
-  display: block;
-  position: relative;
-  top: 350px;
-}
+
 
 .info{
   color: ghostwhite;
