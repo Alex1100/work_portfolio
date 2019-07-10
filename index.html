@@ -47,13 +47,13 @@
     background-color: white;
     position: fixed;
     bottom: 0;
-    height: 250px;
-    min-height: 250px;
+    height: 350px;
+    min-height: 350px;
     width: 100%;
 ">
   <iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
 
-  <form action="https://www.heatchek.io/send_mail" method="POST" target="hiddenFrame">
+  <form action="https://www.heatchek.io/send_mail" id="mail_form" method="POST" target="hiddenFrame" onSubmit="clearForm()">
     <div class="titleDiv">
       <h1 style="color: black">Contact Me</h1>
     </div><div style="
@@ -66,10 +66,19 @@
     position: relative;
     margin: 0 auto;
     text-align: center;
+    border: solid 2px #8fbcd1;
 ">
 
-<textarea name="message" cols="40" rows="5" style="width: 95%;height: 111px;left: 2.5%;display: block;/* margin-left: 20px; *//* padding-right: 10px; */position: relative;top: 30px;border: solid 2px #755b42;resize: none;margin: 0px 4px 0px 0px;" spellcheck="false"></textarea><grammarly-extension class="_1KJtL" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: auto;"><div data-grammarly-part="highlights" class="u_fNK" style="position: absolute; top: 0px; left: 0px;"><div style="box-sizing: content-box; top: 58px; left: 27.9688px; width: 983.047px; height: 107px; position: relative; pointer-events: none; overflow: hidden; border: 0px; border-radius: 0px; padding: 0px; margin: 0px;"><div style="position: absolute; top: 0px; left: 0px;"><div style="height: 884px; width: 2263px;"></div><div style="position: absolute; top: 0px; left: 0px; height: 884px; width: 2263px;"></div></div></div></div><div data-grammarly-part="button" class="u_fNK" style="position: absolute; top: 0px; left: 0px;"><div style="box-sizing: content-box; top: 58px; left: 27.9688px; width: 983.047px; height: 107px; position: relative; pointer-events: none; overflow: hidden; border: 0px; border-radius: 0px; padding: 0px; margin: 0px;"><div style="position: absolute; transform: translate(-100%, -100%); top: 99px; left: 975.047px; width: auto; height: auto; pointer-events: all;"><div style="display: flex; flex-direction: row;"><div><div class="_5WizN _1QzSN"><div class="_3YmQx"><div title="Protected by Grammarly" class="_3QdKe">&nbsp;</div></div></div></div></div></div></div></div></grammarly-extension>
-    <input type="submit" value="Submit">
+<textarea name="message" cols="40" rows="5" style="width: 95%;height: 111px;left: 2.5%;display: block;position: relative;top: 30px;border: solid 2px #8fbcd1;resize: none;margin: 0px 4px 0px 0px;" spellcheck="false"></textarea><input type="submit" value="Submit" style="
+    position: relative;
+    display: block;
+    top: 50px;
+    margin: 0 auto;
+    width: 25vw;
+    background-color: #8fbcd1;
+    color: white;
+"><grammarly-extension class="_1KJtL" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: auto;"><div data-grammarly-part="highlights" class="u_fNK" style="position: absolute; top: 0px; left: 0px;"><div style="box-sizing: content-box; top: 127px; left: 23.1719px; width: 800.641px; height: 107px; position: relative; pointer-events: none; overflow: hidden; border: 0px; border-radius: 0px; padding: 0px; margin: 0px;"><div style="position: absolute; top: 0px; left: 0px;"><div style="height: 884px; width: 2081px;"></div><div style="position: absolute; top: 0px; left: 0px; height: 884px; width: 2081px;"></div></div></div></div><div data-grammarly-part="button" class="u_fNK" style="position: absolute; top: 0px; left: 0px;"><div style="box-sizing: content-box; top: 127px; left: 23.1719px; width: 800.641px; height: 107px; position: relative; pointer-events: none; overflow: hidden; border: 0px; border-radius: 0px; padding: 0px; margin: 0px;"><div style="position: absolute; transform: translate(-100%, -100%); top: 99px; left: 792.641px; width: auto; height: auto; pointer-events: all;"><div style="display: flex; flex-direction: row;"><div><div class="_5WizN _1QzSN"><div class="_3YmQx"><div title="Protected by Grammarly" class="_3QdKe">&nbsp;</div></div></div></div></div></div></div></div></grammarly-extension><grammarly-extension class="_1KJtL" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: auto;"><div data-grammarly-part="highlights" class="u_fNK" style="position: absolute; top: 0px; left: 0px;"><div style="box-sizing: content-box; top: 58px; left: 27.9688px; width: 983.047px; height: 107px; position: relative; pointer-events: none; overflow: hidden; border: 0px; border-radius: 0px; padding: 0px; margin: 0px;"><div style="position: absolute; top: 0px; left: 0px;"><div style="height: 884px; width: 2263px;"></div><div style="position: absolute; top: 0px; left: 0px; height: 884px; width: 2263px;"></div></div></div></div><div data-grammarly-part="button" class="u_fNK" style="position: absolute; top: 0px; left: 0px;"><div style="box-sizing: content-box; top: 58px; left: 27.9688px; width: 983.047px; height: 107px; position: relative; pointer-events: none; overflow: hidden; border: 0px; border-radius: 0px; padding: 0px; margin: 0px;"><div style="position: absolute; transform: translate(-100%, -100%); top: 99px; left: 975.047px; width: auto; height: auto; pointer-events: all;"><div style="display: flex; flex-direction: row;"><div><div class="_5WizN _1QzSN"><div class="_3YmQx"><div title="Protected by Grammarly" class="_3QdKe">&nbsp;</div></div></div></div></div></div></div></div></grammarly-extension>
+
     </div></form></footer>
 
 
@@ -78,10 +87,14 @@
     <span></span>
     <script src="main.css"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-    <script src="./particles.js"></script>
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/main.js"></script>
 
 
-</body><grammarly-popups class="_1KJtL"><div></div></grammarly-popups><div><div class="gr_-editor gr-iframe-first-load" style="display: none;"><div class="gr_-editor_back"></div><iframe class="gr_-ifr gr-_dialog-content"></iframe></div></div><grammarly-card style=""><div></div></grammarly-card><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span><grammarly-mirror><div style="border: 0px transparent; margin: 0px; padding: 2px; font: 400 14px/20px &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; direction: ltr; text-align: left; text-shadow: none; text-indent: 0px; letter-spacing: normal; word-break: normal; overflow-wrap: break-word; word-spacing: 0px; writing-mode: horizontal-tb; white-space: pre-wrap; vertical-align: baseline; clear: none; box-sizing: content-box; width: 979.047px; height: 103px; position: fixed; top: 0px; left: 0px; background: transparent; pointer-events: none; overflow: hidden; color: transparent; z-index: -2147483648; visibility: hidden;">
+<grammarly-popups class="_1KJtL"><div></div></grammarly-popups><div><div class="gr_-editor gr-iframe-first-load" style="display: none;"><div class="gr_-editor_back"></div><iframe class="gr_-ifr gr-_dialog-content"></iframe></div></div><grammarly-card style=""><div></div></grammarly-card><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span><grammarly-mirror><div style="border: 0px transparent; margin: 0px; padding: 2px; font: 400 14px/20px &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; direction: ltr; text-align: left; text-shadow: none; text-indent: 0px; letter-spacing: normal; word-break: normal; overflow-wrap: break-word; word-spacing: 0px; writing-mode: horizontal-tb; white-space: pre-wrap; vertical-align: baseline; clear: none; box-sizing: content-box; width: 979.047px; height: 103px; position: fixed; top: 0px; left: 0px; background: transparent; pointer-events: none; overflow: hidden; color: transparent; z-index: -2147483648; visibility: hidden;">
+</div></grammarly-mirror>
+<script type="text/javascript">
+  function clearForm() {
+    const form = document.getElementById('mail_form');
+    form.reset();
+  }
+</script></body><grammarly-popups class="_1KJtL"><div></div></grammarly-popups><grammarly-card style=""><div></div></grammarly-card><grammarly-mirror><div style="border: 0px transparent; margin: 0px; padding: 2px; font: 400 14px/20px &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; direction: ltr; text-align: left; text-shadow: none; text-indent: 0px; letter-spacing: normal; word-break: normal; overflow-wrap: break-word; word-spacing: 0px; writing-mode: horizontal-tb; white-space: pre-wrap; vertical-align: baseline; clear: none; box-sizing: content-box; width: 796.641px; height: 103px; position: fixed; top: 0px; left: 0px; background: transparent; pointer-events: none; overflow: hidden; color: transparent; z-index: -2147483648; visibility: hidden;">
 </div></grammarly-mirror></html>
