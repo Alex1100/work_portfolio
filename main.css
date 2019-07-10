@@ -1,17 +1,17 @@
-body{
+body {
   background-attachment: fixed;
   background-size: auto;
   background-repeat: no-repeat;
   background-position: initial;
 }
 
-span{
+span {
   display: block;
   visibility: hidden;
   height: 0px;
 }
 
-nav.navbar.navbar-default{
+nav.navbar.navbar-default {
   width: auto;
   height: 20px;
   background-color: black;
@@ -19,7 +19,7 @@ nav.navbar.navbar-default{
 }
 
 
-.contain_triangle{
+.contain_triangle {
   display: inline-block;
   position: absolute;
   left: 50%;
@@ -27,8 +27,7 @@ nav.navbar.navbar-default{
   transform: translate(-50%, -50%);
 }
 
-.trojkat
-{
+.trojkat {
   position: relative;
   overflow: hidden;
   transform: rotate(45deg) skew(10deg,10deg);
