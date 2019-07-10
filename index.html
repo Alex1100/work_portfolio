@@ -59,11 +59,9 @@
         width: 100%;
       "
     >
-      <iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
-
-      <form action="https://www.heatchek.io/send_mail" id="mail_form" method="POST" target="hiddenFrame" onSubmit="clearForm()">
+      <form id="mail_form" onSubmit="submitForm()">
         <div class="titleDiv">
-        <h1 style="color: black">Contact Me</h1>
+          <h1 style="color: black">Contact Me</h1>
         </div>
         <div>
           <input type="hidden" id="subscription_wanted" name="subscription_wanted" value="false">
@@ -112,16 +110,26 @@
               background-color: #8fbcd1;
               color: white;
             "
-          >
+          />
         </div>
       </form>
     </footer>
 
-    <span></span>
     <script src="main.css"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
+      function submitForm() {
+        $.ajax({
+          url:'https://www.heatchek.io/send_mail',
+          type:'post',
+          data: $('#mail_form').serialize(),
+          success:function(){
+            clearForm();
+          }
+        });
+      }
+
       function clearForm() {
         const form = document.getElementById('mail_form');
         form.reset();
